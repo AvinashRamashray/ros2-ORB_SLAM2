@@ -19,8 +19,9 @@ find_package(sensor_msgs REQUIRED)
 find_package(cv_bridge REQUIRED)
 find_package(message_filters REQUIRED)
 find_package(Pangolin REQUIRED)
+find_package(ORB_SLAM2 REQUIRED)
 
-set(ORB_SLAM2_DIR /root/ORB_SLAM2)
+#set(ORB_SLAM2_DIR /root/ORB_SLAM2)
 
 include_directories(${ORB_SLAM2_DIR}/include)
 include_directories(${ORB_SLAM2_DIR})
