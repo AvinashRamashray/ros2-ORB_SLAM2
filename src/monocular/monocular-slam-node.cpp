@@ -13,7 +13,7 @@ MonocularSlamNode::MonocularSlamNode(ORB_SLAM2::System* pSLAM, const string &str
     ,m_SLAM(pSLAM)
 {
 
-    m_image_subscriber = this->create_subscription<ImageMsg>("camera", std::bind(&MonocularSlamNode::GrabImage, this, std::placeholders::_1));
+    m_image_subscriber = this->create_subscription<ImageMsg>("image",10, std::bind(&MonocularSlamNode::GrabImage, this, std::placeholders::_1));
 
 }
 
